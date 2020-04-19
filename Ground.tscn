@@ -1,0 +1,1887 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Rock.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Rock2.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.752941, 0.376471, 0.227451, 1 )
+emission_enabled = true
+emission = Color( 0.580392, 0.329412, 0.329412, 1 )
+emission_energy = 1.0
+emission_operator = 1
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.537255, 0.447059, 0.447059, 1 )
+emission_enabled = true
+emission = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+emission_energy = 0.05
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.392157, 0.117647, 0, 1 )
+emission_enabled = true
+emission = Color( 0.415686, 0.211765, 0.00784314, 1 )
+emission_energy = 0.05
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.172549, 0.12549, 0.0117647, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.490196, 0.203922, 0, 1 )
+emission_enabled = true
+emission = Color( 0.729412, 0.54902, 0.352941, 1 )
+emission_energy = 0.05
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.482353, 0.317647, 0.235294, 1 )
+emission_enabled = true
+emission = Color( 0.403922, 0.247059, 0.0784314, 1 )
+emission_energy = 0.1
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=9]
+flags_unshaded = true
+albedo_color = Color( 0.282353, 0.882353, 0.768627, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+flags_unshaded = true
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.32549, 0.317647, 0.317647, 1 )
+
+[node name="Ground" type="Spatial"]
+
+[node name="Floor" type="Spatial" parent="."]
+
+[node name="CSGBox2" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 79.7932, 0.893463, 50.1884 )
+use_collision = true
+width = 40.8593
+height = 30.1701
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox3" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.9258, -1.56182, 81.1189 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox4" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.6275, -6.47665, 87.7797 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox5" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.0632, -10.9816, 67.118 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox6" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 94.232, 5.83876, 84.2392 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox11" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 104.48, 5.83876, 38.2392 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox12" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 103.181, 9.68691, -12.0217 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox13" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 98.4074, 4.62006, -79.9293 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox14" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 72.7097, 9.26239, -111.949 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox15" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.4264, 9.26238, -127.587 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox16" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -55.9964, -1.69215, -117.573 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox17" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -130.666, 9.26239, -127.15 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox19" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -154.857, 6.59813, -71.351 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox20" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -193.907, 12.41, -49.5908 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox21" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -209.992, 12.41, 4.82451 )
+use_collision = true
+width = 74.9085
+height = 32.0
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox22" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -219.507, 22.7009, 77.7357 )
+use_collision = true
+width = 74.9085
+height = 52.2012
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox23" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -188.55, 17.0403, 128.954 )
+use_collision = true
+width = 74.9085
+height = 41.4541
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox24" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -114.65, 17.0403, 147.478 )
+use_collision = true
+width = 74.9085
+height = 41.4541
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox25" type="CSGBox" parent="Floor"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -50.2942, 11.7034, 138.514 )
+use_collision = true
+width = 74.9085
+height = 41.4541
+depth = 81.1705
+material = SubResource( 1 )
+
+[node name="CSGBox7" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.598, 8.38313, 119.641 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox8" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56.845, 8.38313, 119.641 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="CSGBox10" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4016, 8.38313, 108.205 )
+use_collision = true
+width = 40.8593
+height = 32.0
+depth = 46.0
+material = SubResource( 1 )
+
+[node name="Ground" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52.1926, 1.24865, -11.407 )
+use_collision = true
+width = 125.593
+height = 0.162059
+depth = 303.674
+material = SubResource( 1 )
+
+[node name="Ground2" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -70.0943, 1.24865, -92.6219 )
+use_collision = true
+width = 125.593
+height = 0.162059
+depth = 159.089
+material = SubResource( 1 )
+
+[node name="Ground3" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -169.615, 1.24865, -64.9688 )
+use_collision = true
+width = 125.593
+height = 0.162059
+depth = 159.089
+material = SubResource( 1 )
+
+[node name="Ground4" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.3978, 1.24865, 171.452 )
+use_collision = true
+width = 125.593
+height = 0.162059
+depth = 159.089
+material = SubResource( 1 )
+
+[node name="Ground5" type="CSGBox" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.22268, 1.65434, 148.43 )
+use_collision = true
+width = 57.5562
+height = 0.162059
+depth = 159.089
+material = SubResource( 1 )
+
+[node name="City" type="Spatial" parent="."]
+
+[node name="CSGBox8" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.9066, 0, -68.2485 )
+use_collision = true
+width = 14.3547
+height = 19.3152
+depth = 8.29295
+material = SubResource( 5 )
+
+[node name="CSGBox10" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.4216, 0, -36.8407 )
+use_collision = true
+width = 14.3547
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox12" type="CSGBox" parent="City"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5019, 0, -26.3846 )
+use_collision = true
+width = 14.3547
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox31" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -17.3445, 0, -23.8445 )
+use_collision = true
+width = 14.3547
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox13" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.51511, 0, -29.9947 )
+use_collision = true
+width = 9.25044
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox14" type="CSGBox" parent="City"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -7.11699, 4.78292, -41.8624 )
+use_collision = true
+width = 13.8652
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox15" type="CSGBox" parent="City"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 7.56488, 0, -41.939 )
+use_collision = true
+width = 13.8652
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox16" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.11571, 0, -39.6915 )
+use_collision = true
+width = 8.90606
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox29" type="CSGBox" parent="City"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 14.1156, 4.42667, -33.7323 )
+use_collision = true
+width = 8.90606
+height = 19.3152
+depth = 4.88096
+material = SubResource( 5 )
+
+[node name="CSGBox30" type="CSGBox" parent="City"]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 22.7934, 0, -38.4688 )
+use_collision = true
+width = 12.8353
+height = 19.3152
+depth = 4.88096
+material = SubResource( 5 )
+
+[node name="CSGBox18" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.54031, 4.78292, -48.9437 )
+use_collision = true
+width = 10.4515
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox19" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.96993, 0, -48.9437 )
+use_collision = true
+width = 10.4515
+height = 19.3152
+depth = 4.04769
+material = SubResource( 5 )
+
+[node name="CSGBox20" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.70824, 0, -64.6437 )
+use_collision = true
+width = 6.90022
+height = 19.3152
+depth = 17.3114
+material = SubResource( 5 )
+
+[node name="CSGBox21" type="CSGBox" parent="City"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1499, 0, -76.8643 )
+use_collision = true
+width = 3.29494
+height = 19.3152
+depth = 9.47603
+material = SubResource( 5 )
+
+[node name="CSGBox22" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.47147, 0, -79.7206 )
+use_collision = true
+width = 3.29494
+height = 19.3152
+depth = 15.2494
+material = SubResource( 5 )
+
+[node name="CSGBox23" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.4129, 0, -78.0646 )
+use_collision = true
+width = 6.45388
+height = 19.3152
+depth = 15.2494
+material = SubResource( 5 )
+
+[node name="CSGBox24" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.6857, 0, -66.0534 )
+use_collision = true
+width = 14.7067
+height = 27.4549
+depth = 3.96657
+material = SubResource( 5 )
+
+[node name="CSGBox25" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6891, 0, -63.4656 )
+use_collision = true
+width = 24.4243
+height = 19.3152
+depth = 3.96657
+material = SubResource( 5 )
+
+[node name="CSGBox32" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35.0018, 0, -57.7281 )
+use_collision = true
+width = 11.2268
+height = 19.3152
+depth = 3.96657
+material = SubResource( 5 )
+
+[node name="CSGBox33" type="CSGBox" parent="City"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 32.1592, 0, -42.0364 )
+use_collision = true
+width = 11.2268
+height = 19.3152
+depth = 3.96657
+material = SubResource( 5 )
+
+[node name="CSGBox34" type="CSGBox" parent="City"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 44.4611, 0, -43.5716 )
+use_collision = true
+width = 11.2268
+height = 19.3152
+depth = 5.25518
+material = SubResource( 5 )
+
+[node name="CSGBox35" type="CSGBox" parent="City"]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 47.0357, 0, -51.2714 )
+use_collision = true
+width = 11.2268
+height = 19.3152
+depth = 5.25518
+material = SubResource( 5 )
+
+[node name="CSGBox36" type="CSGBox" parent="City"]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 57.7099, 0, -60.7662 )
+use_collision = true
+width = 11.2268
+height = 19.3152
+depth = 5.25518
+material = SubResource( 5 )
+
+[node name="CSGBox37" type="CSGBox" parent="City"]
+transform = Transform( 1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 61.0938, -0.0793457, -58.4242 )
+use_collision = true
+width = 11.2268
+height = 19.3152
+depth = 5.25518
+material = SubResource( 5 )
+
+[node name="CSGBox26" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.411, 0, -51.2129 )
+use_collision = true
+width = 6.22752
+height = 15.6408
+depth = 5.79333
+material = SubResource( 5 )
+
+[node name="CSGBox27" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.58101, -2.61288, -21.35 )
+use_collision = true
+width = 16.1731
+height = 19.3152
+depth = 7.75939
+material = SubResource( 5 )
+
+[node name="CSGBox28" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.1972, 0, -20.2131 )
+use_collision = true
+width = 12.9256
+height = 19.3152
+depth = 20.4158
+material = SubResource( 5 )
+
+[node name="CSGBox9" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.2839, 0, -57.9996 )
+use_collision = true
+width = 3.52386
+height = 22.2883
+depth = 5.76406
+material = SubResource( 5 )
+
+[node name="CSGBox11" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.2839, 0, -47.4008 )
+use_collision = true
+width = 3.83637
+height = 13.3844
+depth = 5.76406
+material = SubResource( 5 )
+
+[node name="CSGBox17" type="CSGBox" parent="City"]
+transform = Transform( -4.37114e-08, 0, 1, -0.945131, -0.32669, -4.1313e-08, 0.32669, -0.945131, 1.42801e-08, -17.2839, 6.52719, -51.2749 )
+use_collision = true
+width = 3.83637
+height = 8.80319
+depth = 5.76406
+material = SubResource( 5 )
+
+[node name="Pit" type="Spatial" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5525, -26.6085, -24.8999 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox2" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -86.4468, -25.6978, -17.6972 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox3" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -131.986, -26.6085, -0.853073 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox4" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -188.199, -26.6085, 28.3543 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox5" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -200.217, -26.6085, 62.866 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox6" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -188.791, -26.6085, 96.0266 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox7" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -138.881, -26.6085, 108.726 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox8" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3801, -26.6085, 107.638 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox9" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42.0122, -26.6085, 98.0077 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox10" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91734, -26.6085, 79.8158 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox11" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5745, -26.6085, 53.8604 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox12" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1847, -26.6085, 21.5178 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox13" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4947, -26.6085, -8.1825 )
+use_collision = true
+width = 59.2939
+height = 53.7331
+depth = 37.8137
+material = SubResource( 2 )
+
+[node name="CSGBox14" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.804, -43.688, 18.7419 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox15" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7484, -43.688, 76.9687 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox16" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3129, -46.1797, 10.6884 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox17" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72.3154, -46.1797, 81.6513 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox18" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -110.08, -46.1797, 55.2447 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox21" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -165.883, -46.1797, 18.6352 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="EndGame" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -150.195, -45.6607, 40.6723 )
+use_collision = true
+width = 14.6584
+height = 18.7756
+depth = 15.158
+material = SubResource( 3 )
+
+[node name="CSGBox23" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8919, -37.9391, 2.72997 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox24" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1383, -31.1725, -6.43208 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox25" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.7315, -27.8842, -9.44319 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox26" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3983, -26.174, -17.4435 )
+use_collision = true
+width = 88.6304
+height = 36.0906
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox27" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4798, -30.7199, -16.6414 )
+use_collision = true
+width = 88.6304
+height = 36.0906
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox19" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -151.406, -46.1797, 106.903 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="CSGBox20" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -192.001, -51.0644, 61.3059 )
+use_collision = true
+width = 88.6304
+height = 18.7756
+depth = 63.1789
+material = SubResource( 2 )
+
+[node name="Rocks" type="Spatial" parent="."]
+
+[node name="CSGMesh" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.1188, 0, 0, 0, 1, 0, 0, 0, 1, 73, 15.6424, 27.1791 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh2" type="CSGMesh" parent="Rocks"]
+transform = Transform( -3.0227, -0.11442, 0.218135, -0.356852, -0.575105, -0.810038, 0.680319, -0.810038, 0.544293, 67.4864, 15.6424, 27.1791 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh3" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.9777, -0.0748627, 0.142722, -0.356852, -0.575105, -0.810038, 0.680319, -0.810038, 0.544293, 60.0044, 15.6424, 27.1791 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh4" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.9777, -0.0748627, 0.142722, -0.356852, -0.575105, -0.810038, 0.680319, -0.810038, 0.544293, 63.0527, 14.8634, 27.1787 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh5" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.145272, -0.801813, 0.562686, -0.356852, -0.575105, -0.810038, 2.08639, -0.137342, 0.00301486, 59.5341, 15.0747, 30.2764 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh6" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.145272, -0.801813, 0.562686, -0.542874, -0.874898, -1.2323, 2.08639, -0.137342, 0.00301486, 59.5341, 15.0747, 34.2764 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh7" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.145272, -0.801813, 0.562686, -0.542874, -0.874898, -1.2323, 2.08639, -0.137342, 0.00301486, 59.5341, 14.1802, 37.1073 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh8" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.145272, -0.801813, 0.562686, -0.542874, -0.874898, -1.2323, 2.08639, -0.137342, 0.00301486, 59.8383, 14.1802, 40.3399 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh9" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.145272, 0.801813, -0.562686, 0.542874, 0.874898, 1.2323, 2.08639, -0.137342, 0.00301486, 59.8383, 14.1802, 41.5004 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh55" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -0.48097, -0.775134, -1.09178, 2.0529, -0.340186, 0.148546, 29.3788, 9.28032, 65.4759 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh56" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -0.48097, -0.775134, -1.09178, 2.0529, -0.340186, 0.148546, 29.3788, 8.24492, 71.0431 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh57" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -0.48097, -0.775134, -1.09178, 2.0529, -0.340186, 0.148546, 30.5976, 8.21128, 75.7125 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh58" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -0.48097, -0.775134, -1.09178, 2.0529, -0.340186, 0.148546, 30.5976, 7.24738, 80.9962 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh59" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -0.48097, -0.775134, -1.09178, 2.0529, -0.340186, 0.148546, 29.4988, 7.7858, 82.0378 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh60" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -0.48097, -0.775134, -1.09178, 2.0529, -0.340186, 0.148546, 29.4988, 7.7858, 77.9643 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh61" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -1.79171, -0.307555, -0.877043, 1.11152, -0.788651, -0.666967, 29.4988, 7.7858, 74.5627 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh62" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.399675, 0.738945, -0.542733, -1.79171, -0.307555, -0.877043, 1.11152, -0.788651, -0.666967, 29.4988, 7.7858, 68.5627 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh63" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.970201, 0.953031, 0.503771, -1.79171, -0.307555, -0.877043, 0.673739, 0.509648, -0.696863, 29.4988, 5.14183, 64.5195 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh64" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.970201, 0.953031, 0.503771, -1.79171, -0.307555, -0.877043, 0.673739, 0.509648, -0.696863, 29.4988, 2.88723, 43.4308 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh67" type="CSGMesh" parent="Rocks"]
+transform = Transform( -3.61972, 3.55566, 1.87952, -1.79171, -0.307555, -0.877043, 0.673739, 0.509648, -0.696863, 36.9643, 2.88723, 43.4308 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh68" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.96011, -3.3549, -1.58848, 0.79381, 1.21735, 1.33361, 0.673739, 0.509648, -0.696863, 50.2766, 2.88723, 43.4308 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh70" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.96011, -3.3549, -1.58848, 0.79381, 1.21735, 1.33361, 2.67613, 2.02435, -2.76798, 62.521, 2.88723, 47.2171 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh71" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.31605, -0.159304, -3.44097, 0.56557, 3.34522, -0.00921094, -3.48686, 2.37053, 0.35096, 57.9396, 2.88723, 54.237 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh78" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.31605, -0.159304, -3.44097, 0.56557, 3.34522, -0.00921094, -6.94021, 4.71829, 0.698548, 57.9396, 2.88723, 31.0177 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh86" type="CSGMesh" parent="Rocks"]
+transform = Transform( -7.15794, 5.30786, 1.50961, 2.50349, 2.04099, -0.414035, -1.4068, -1.06731, 3.14292, 69.4425, 2.88723, -74.2752 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh87" type="CSGMesh" parent="Rocks"]
+transform = Transform( -3.20235, 5.41991, -0.359943, 6.55205, -1.75005, -1.43922, -2.50964, 1.01983, 3.18236, 55.2379, 2.88724, -73.0885 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh88" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.20235, -5.41991, 0.359943, 6.55205, -1.75005, -1.43922, 2.50964, -1.01983, -3.18236, 41.2961, 2.88724, -73.0885 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh89" type="CSGMesh" parent="Rocks"]
+transform = Transform( 6.8974, -5.06992, -0.763162, 2.3686, 2.59498, -1.2722, 2.50964, -1.01983, -3.18236, 78.8389, 20.4408, -72.2353 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh90" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.00441, 3.77928, 1.6995, 4.13378, 3.92432, -6.32727, 15.231, -10.7508, -3.25123, 82.2145, 20.4408, -48.975 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh91" type="CSGMesh" parent="Rocks"]
+transform = Transform( -5.60881, 2.09589, 6.73908, -1.75267, -7.49896, 2.06842, -14.9522, 9.1998, 1.94926, 92.31, 20.4408, 7.13586 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh92" type="CSGMesh" parent="Rocks"]
+transform = Transform( 15.9192, -9.42103, -3.73232, -1.75267, -7.49896, 2.06842, -1.26738, -0.522755, 5.94008, -26.9711, 28.3544, 107.07 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh93" type="CSGMesh" parent="Rocks"]
+transform = Transform( 15.664, -8.92392, -5.20687, -1.75267, -7.49896, 2.06842, 3.10897, -3.06474, 4.70142, -69.3441, 28.3544, 107.07 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh94" type="CSGMesh" parent="Rocks"]
+transform = Transform( 15.664, -8.92392, -5.20687, -1.75267, -7.49896, 2.06842, 3.10897, -3.06474, 4.70142, -95.9118, 36.5387, 114.943 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh95" type="CSGMesh" parent="Rocks"]
+transform = Transform( 15.664, -8.92392, -5.20687, -1.75267, -7.49896, 2.06842, 3.10897, -3.06474, 4.70142, -132.329, 36.5387, 105.378 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh96" type="CSGMesh" parent="Rocks"]
+transform = Transform( 9.77748, -4.72133, -7.01413, -2.56376, -10.9693, 3.02563, 12.6265, -8.16934, 0.129617, -165.309, 36.5387, 79.0293 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh97" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.44859, -2.37943, 0.692381, 0.914722, 3.91372, -1.07951, -9.28588, 4.87573, 4.92449, -168.603, 29.1768, 45.6128 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh147" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.1978, 0.554335, 8.73859, 1.54454, 4.04393, -5.13046, -9.89588, 5.41738, 4.26659, -173.099, 44.2216, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh148" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.109654, 3.07189, 3.22754, 1.95149, 2.68778, -9.6056, -9.89588, 5.41738, 4.26659, -168.734, 34.5619, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh149" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.109654, 3.07189, 3.22754, 1.95149, 2.68778, -9.6056, -9.89588, 5.41738, 4.26659, -168.734, 20.6268, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh150" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.109654, 3.07189, 3.22754, 1.95149, 2.68778, -9.6056, -9.89588, 5.41738, 4.26659, -167.497, 8.19456, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh151" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.109654, 3.07189, 3.22754, 1.95149, 2.68778, -9.6056, -9.89588, 5.41738, 4.26659, -167.497, -6.42657, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh152" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.109654, 3.07189, 3.22754, 1.95149, 2.68778, -9.6056, -9.89588, 5.41738, 4.26659, -167.497, -18.53, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh153" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.41068, -0.0426455, 9.39458, 1.35289, 4.08152, -3.79821, -9.89588, 5.41738, 4.26659, -163.191, -32.4187, 60.3374 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 9 )
+
+[node name="CSGMesh154" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -156.947, -32.4187, 77.1314 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh155" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -152.053, -32.4187, 71.0252 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh156" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -156.552, -35.5543, 49.3145 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh161" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.255756, 0.771588, -0.718029, -2.08914, 1.14367, 0.900728, -157.831, -36.6106, 33.0735 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh162" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.95815, 0.98595, 1.77171, 0.255756, 0.771588, -0.718029, -0.786658, 0.579634, -1.26723, -144.48, -37.0173, 33.4956 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh163" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.95815, 0.98595, 1.77171, -0.523008, -0.541956, 0.249007, 0.963727, -0.95858, 1.84495, -144.007, -36.6693, 48.0763 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh164" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.95815, 0.98595, 1.77171, -0.523008, -0.541956, 0.249007, 0.963727, -0.95858, 1.84495, -144.007, -36.8761, 45.0763 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh165" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.4377, -1.1811, 1.32353, -0.523008, -0.541956, 0.249007, 1.642, -0.704255, -2.18884, -144.007, -36.8761, 38.1652 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh166" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.4377, -1.1811, 1.32353, -0.523008, -0.541956, 0.249007, 1.642, -0.704255, -2.18884, -144.007, -36.8761, 41.4824 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh167" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.87476, -2.36168, 2.64648, -0.523008, -0.541956, 0.249007, 1.642, -0.704255, -2.18884, -152.314, -36.8761, 33.4874 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh168" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.87476, -2.36168, 2.64648, -0.523008, -0.541956, 0.249007, 1.642, -0.704255, -2.18884, -147.68, -37.0129, 48.7366 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh169" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.87476, -2.36168, 2.64648, -0.523008, -0.541956, 0.249007, 1.642, -0.704255, -2.18884, -152.682, -37.0129, 48.7366 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh170" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.0153651, 0.570936, -3.21883, -0.523008, -0.541956, 0.249007, -3.31061, 2.3974, -1.19749, -157.682, -36.3347, 40.6032 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 3 )
+
+[node name="CSGMesh157" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -152.555, -35.5543, 59.8408 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh158" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -163.221, -25.1107, 49.0242 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh172" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -167.983, 34.5957, 47.4039 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh178" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -169.685, 3.13326, 43.8521 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh179" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -164.451, 3.13326, 50.3252 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh180" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -162.451, 3.13326, 74.3252 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh181" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -163.014, 3.13326, 77.7312 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh173" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -170.256, 48.0292, 70.1415 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh175" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -170.803, 47.6468, 56.483 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh176" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -170.731, 48.0292, 65.483 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh177" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.263593, -0.00796854, 1.75543, 0.428635, 1.29315, -1.20338, -1.8491, 1.01227, 0.797236, -171.879, 49.2624, 61.483 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh174" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -174.878, 49.1008, 49.1832 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh159" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -162.489, -26.4797, 76.2202 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh160" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.297811, -0.00900296, 1.98331, 0.484278, 1.46101, -1.3596, -2.08914, 1.14367, 0.900728, -162.489, -15.4531, 76.2202 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 10 )
+
+[node name="CSGMesh98" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.60727, 0.350014, 3.04213, 3.34899, 2.42263, -2.03626, -9.22811, 6.22575, 3.53474, -168.603, 29.1768, 9.0857 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh99" type="CSGMesh" parent="Rocks"]
+transform = Transform( 9.1056, -6.21743, -4.10269, 1.12341, -1.27036, 1.87001, -3.84489, -2.11693, 2.35931, -168.723, 25.1621, -12.7589 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh100" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.74016, -3.4371, 1.39552, 1.12341, -1.27036, 1.87001, -9.72969, 5.5968, 4.52227, -154.024, 28.3731, -31.4792 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh101" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.74016, -3.4371, 1.39552, 1.12341, -1.27036, 1.87001, -9.72969, 5.5968, 4.52227, -151.468, 21.3624, -65.1213 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh102" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.74016, -3.4371, 1.39552, -7.6743, 4.85582, 1.87544, 6.08556, -3.05925, -4.52002, -153.305, 27.2716, -79.9689 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh103" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.08055, -4.14363, -1.00505, -9.0365, 5.23158, 3.0208, 4.01635, 0.460981, -3.96988, -153.305, 27.2716, -71.6295 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh104" type="CSGMesh" parent="Rocks"]
+transform = Transform( 4.0082, -1.70871, -3.92981, -9.0365, 5.23158, 3.0208, 1.11043, 3.80296, -1.15183, -153.305, 27.2716, -67.5985 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh116" type="CSGMesh" parent="Rocks"]
+transform = Transform( -3.90497, 0.526397, 3.29124, -4.13669, 1.22408, -2.98843, 1.34592, 5.28946, 0.364039, -116.044, 22.2321, -38.3497 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh117" type="CSGMesh" parent="Rocks"]
+transform = Transform( -3.90497, 0.526397, 3.29124, -4.13669, 1.22408, -2.98843, 1.34592, 5.28946, 0.364039, -155.044, 22.2321, -38.3497 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh105" type="CSGMesh" parent="Rocks"]
+transform = Transform( 4.0082, -1.70871, -3.92981, -6.49049, 0.276563, 2.78092, -6.38475, 6.46185, 1.64877, -153.305, 27.2716, -60.6693 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh106" type="CSGMesh" parent="Rocks"]
+transform = Transform( 7.34795, -1.44299, -4.77377, -2.04932, -0.956008, -0.62288, -6.38475, 6.46185, 1.64877, -132.126, 27.2716, -89.2926 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh107" type="CSGMesh" parent="Rocks"]
+transform = Transform( 21.0172, -4.12736, -13.6543, -8.78176, -4.09669, -2.66916, -18.2621, 18.4827, 4.71594, -85.323, 7.71956, -98.898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh108" type="CSGMesh" parent="Rocks"]
+transform = Transform( 21.0172, -4.12736, -13.6543, -8.78176, -4.09669, -2.66916, -0.205092, 0.207569, 0.0529622, -52.715, -1.53415, -79.5429 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh109" type="CSGMesh" parent="Rocks"]
+transform = Transform( -21.6365, 0.438121, 8.57438, -7.12042, 5.79879, 10.9565, -4.41333, 4.46662, 1.13968, 13.0399, -1.53415, -85.4952 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh111" type="CSGMesh" parent="Rocks"]
+transform = Transform( -21.6713, 0.464206, 8.64605, -0.797951, 0.079753, 5.83106, -8.24842, 7.31757, 9.27944, 13.0399, 19.6149, -103.342 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh112" type="CSGMesh" parent="Rocks"]
+transform = Transform( -8.72634, 1.31635, 4.42867, -0.797951, 0.079753, 5.83106, 1.5979, 6.44868, 4.79931, 38.7785, 19.6149, -84.4323 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh113" type="CSGMesh" parent="Rocks"]
+transform = Transform( -8.72634, 1.31635, 4.42867, -0.797951, 0.079753, 5.83106, 1.5979, 6.44868, 4.79931, -25.2215, 19.6149, -98.4323 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh114" type="CSGMesh" parent="Rocks"]
+transform = Transform( -8.72634, 1.31635, 4.42867, -0.797951, 0.079753, 5.83106, 1.5979, 6.44868, 4.79931, -15.8064, 9.10236, -92.0133 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh110" type="CSGMesh" parent="Rocks"]
+transform = Transform( -21.6365, 0.438121, 8.57438, -5.79729, 4.74575, 8.76183, 4.13931, -3.33871, -6.57858, -19.9601, -1.53415, -83.8299 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh79" type="CSGMesh" parent="Rocks"]
+transform = Transform( 6.94021, -4.71829, -0.698548, 0.56557, 3.34522, -0.00921094, 3.31605, -0.159304, -3.44097, 73.3587, 2.88723, 24.2584 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh80" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.866914, -2.38396, 2.57425, 1.37727, 8.14625, -0.0224304, 7.71608, -4.1266, -2.43644, 78.908, 2.88723, 15.3007 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh81" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.866914, -2.38396, 2.57425, -6.42997, -2.84232, 1.73868, -4.48221, 8.67821, 1.70696, 78.908, 2.88723, -11.6715 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh84" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.838495, 0.967186, 3.02106, -6.42997, -2.84232, 1.73868, -4.48762, 8.94758, 0.643142, 78.8083, 2.88723, -52.7526 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh85" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.838495, 0.967186, 3.02106, 4.48762, -8.94758, -0.643142, -6.42997, -2.84232, 1.73868, 78.8083, 2.88723, -64.9231 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh82" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.866914, -2.38396, 2.57425, 5.99369, -7.64686, -2.0988, -5.05079, -4.99156, 1.23765, 78.908, 2.88723, -32.7948 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh83" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.446825, -1.22874, 1.32682, 3.08927, -3.94135, -1.08177, -2.60328, -2.57275, 0.637908, 78.6298, 0.560858, -22.9938 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh65" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.39465, 1.36997, 0.724164, -2.57556, -0.442106, -1.26074, 0.968491, 0.732612, -1.00173, 34.1758, 4.37787, 64.0376 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh66" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.970201, 0.953031, 0.503771, -1.79171, -0.307555, -0.877043, 0.673739, 0.509648, -0.696863, 39.4044, 5.54357, 63.9666 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh69" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.580897, 0.891369, 0.976383, -1.95297, 0.456421, -0.263943, 0.673739, 0.509648, -0.696863, 45.1425, 5.54357, 63.9666 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh72" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.21952, -0.585638, -0.752897, -0.260854, -0.924859, 0.302712, 1.74647, 0.253502, 0.92202, 35.198, 7.63484, 65.7318 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh73" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.18656, -0.0447481, -0.803383, 0.383856, -1.09377, -0.114292, 1.74647, 0.253502, 0.92202, 31.573, 7.63484, 65.7318 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh74" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.18656, -0.0447481, -0.803383, 0.383856, -1.09377, -0.114292, 1.74647, 0.253502, 0.92202, 30.1666, 7.63484, 64.4287 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh75" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.74647, 0.253502, 0.92202, 0.383856, -1.09377, -0.114292, -1.18656, 0.0447481, 0.803383, 43.558, 7.9892, 64.4287 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh76" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.02547, -0.057755, 0.62983, -0.145327, -1.11688, -0.287086, -0.694112, 0.108835, 1.01464, 38.6167, 7.9892, 64.4287 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh77" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.02547, -0.057755, 0.62983, -0.145327, -1.11688, -0.287086, -0.694112, 0.108835, 1.01464, 38.6167, 7.9892, 64.4287 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh10" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.145272, 0.801813, -0.562686, -1.09143, 0.715761, 0.869234, 1.85917, 0.521531, 0.873498, 59.0536, 14.9669, 45.6972 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh11" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.145272, 0.801813, -0.562686, -1.09143, 0.715761, 0.869234, 3.57588, 1.0031, 1.68007, 59.0536, 14.9669, 51.2909 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh12" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.266292, 1.46977, -1.03144, -1.09143, 0.715761, 0.869234, 3.57588, 1.0031, 1.68007, 59.0536, 14.9669, 58.3925 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh13" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.266292, 1.46977, -1.03144, 0.128733, -0.950994, -1.27445, -3.73652, -0.783669, -1.39785, 59.0536, 14.9669, 65.5085 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh14" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.266292, 1.46977, -1.03144, 3.57588, 1.0031, 1.68007, 1.09143, -0.715762, -0.869234, 59.0536, 14.9669, 70.246 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh15" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.07835, -1.35475, -0.23706, 3.57588, 1.0031, 1.68007, -0.315099, -0.914979, 1.32787, 61.0144, 14.9669, 72.8687 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh17" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.330934, 0.00828832, -1.48188, 3.73314, 0.618286, 1.56146, -0.0570038, -1.8156, 0.089053, 75.6843, 14.9669, 70.455 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh18" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.330934, 0.00828832, -1.48188, 1.91594, 1.8815, 0.70361, 3.20449, -0.37235, 1.39679, 75.6843, 15.3739, 66.4082 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh19" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.330934, 0.00828832, -1.48188, -0.0570034, -1.8156, 0.0890532, -3.73314, -0.618286, -1.56146, 75.1809, 15.3739, 63.8329 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh20" type="CSGMesh" parent="Rocks"]
+transform = Transform( -3.73314, -0.618286, -1.56146, -0.0570034, -1.8156, 0.0890532, -0.330934, -0.0082883, 1.48188, 79.712, 16.3883, 60.0669 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh21" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.28586, 0.16803, -1.02725, 3.02015, -0.392452, 1.68287, -1.80951, -1.86989, -0.868776, 85.5298, 17.6734, 56.7111 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh22" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.924146, 1.53536, 1.266, 3.02015, -0.392452, 1.68287, 2.01835, 1.08047, -0.455233, 84.0721, 17.6734, 59.3034 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh23" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.31474, 1.97234, 0.489789, -1.66995, -1.63753, 1.25154, 4.92003, 0.974557, 2.77212, 85.237, 15.0268, 48.3706 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh25" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.31474, 1.97234, 0.489789, -5.1846, -1.36517, -2.35374, -0.339651, -1.3295, 1.92637, 85.237, 15.0268, 27.1823 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh26" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.31474, 1.97234, 0.489789, -5.1846, -1.36517, -2.35374, -0.339651, -1.3295, 1.92637, 85.237, 20.1193, 27.1823 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh27" type="CSGMesh" parent="Rocks"]
+transform = Transform( -1.31474, 1.97234, 0.489789, -5.1846, -1.36517, -2.35374, -0.339651, -1.3295, 1.92637, 79.0109, 12.6476, 27.1823 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh28" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.11464, 3.17233, 0.787782, 0.656497, 2.56973, -3.72341, -6.54475, -1.72332, -2.97123, 89.8703, 20.5125, 38.0425 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh29" type="CSGMesh" parent="Rocks"]
+transform = Transform( 6.72524, -0.0937275, 2.17927, 0.656497, 2.56973, -3.72341, 1.44104, 3.60898, 2.16785, 92.5454, 20.5125, 52.2896 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh30" type="CSGMesh" parent="Rocks"]
+transform = Transform( 6.72524, -0.0937275, 2.17927, 0.656497, 2.56973, -3.72341, 1.44104, 3.60898, 2.16785, 95.693, 20.5125, 62.1922 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh31" type="CSGMesh" parent="Rocks"]
+transform = Transform( 6.72524, -0.0937275, 2.17927, 0.656497, 2.56973, -3.72341, 1.44104, 3.60898, 2.16785, 80.8978, 21.643, 65.1651 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh32" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.348682, -3.51026, -1.52995, 0.656497, 2.56973, -3.72341, 6.86905, 0.843539, 2.66609, 78.5775, 21.643, 75.936 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh33" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.348682, -3.51026, -1.52995, -1.14371, 2.26384, -4.28657, 6.80491, 1.47989, 1.61156, 78.5775, 21.643, 90.5338 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh34" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.348682, -3.51026, -1.52995, -1.14371, 2.26384, -4.28657, 6.80491, 1.47989, 1.61156, 69.3573, 21.643, 99.9898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh35" type="CSGMesh" parent="Rocks"]
+transform = Transform( -6.80491, -1.47989, -1.61156, -1.14371, 2.26384, -4.28657, 0.348681, -3.51026, -1.52995, 59.1789, 21.643, 99.9898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh36" type="CSGMesh" parent="Rocks"]
+transform = Transform( -6.80491, -1.47989, -1.61156, -1.14371, 2.26384, -4.28657, 0.348681, -3.51026, -1.52995, 34.917, 21.643, 99.9898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh37" type="CSGMesh" parent="Rocks"]
+transform = Transform( -6.80491, -1.47989, -1.61156, -0.816145, 0.205414, -4.47725, 0.873824, -4.1719, 0.81831, 44.3073, 21.643, 99.9898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh38" type="CSGMesh" parent="Rocks"]
+transform = Transform( -6.80491, -1.47989, -1.61156, -0.816145, 0.205414, -4.47725, 0.873824, -4.1719, 0.81831, 44.3073, 10.2446, 99.9898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh39" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -6.78427, -1.3763, -2.71545, 0.873824, -4.1719, 0.81831, 34.29, 10.2446, 99.9898 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh40" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -6.78427, -1.3763, -2.71545, 0.873824, -4.1719, 0.81831, 30.1041, 10.2446, 88.7057 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh41" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -6.78427, -1.3763, -2.71545, 0.873824, -4.1719, 0.81831, 28.6416, 18.9036, 88.7057 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh118" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -6.78427, -1.3763, -2.71545, 0.873824, -4.1719, 0.81831, -8.01865, 0.374605, 42.6305 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh119" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -6.78427, -1.3763, -2.71545, 2.37966, -11.3612, 2.22848, -8.01865, -2.38785, 57.893 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh120" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -0.839934, -0.170394, -0.336189, 2.37966, -11.3612, 2.22848, -11.3017, 1.39165, 24.9182 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh121" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.36032, -3.34686, 4.33444, -0.839934, -0.170394, -0.336189, 2.54548, -10.8726, 1.20334, -11.3017, 1.39165, 2.30204 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh122" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.36549, -11.3684, 2.28417, -1.66594, -0.337962, -0.666801, 0.666994, 0.277424, -2.56719, -22.3611, 1.39165, -10.875 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh123" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.27107, -11.3226, 2.56916, -1.66594, -0.337962, -0.666801, 0.939493, -1.05616, -2.28195, -42.1636, 1.39164, -9.89001 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh124" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.27107, -11.3226, 2.56916, -1.66594, -0.337962, -0.666801, 0.939493, -1.05616, -2.28195, -114.384, 1.39164, 14.5953 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh125" type="CSGMesh" parent="Rocks"]
+transform = Transform( 3.75343, 1.29192, 2.15928, -2.13686, 1.54625, 1.59646, 2.20151, -11.2239, 2.71919, -105.408, 1.58851, 3.92859 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh137" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.43158, 11.2385, -1.9354, -1.0427, -0.211529, -0.417349, -0.357539, -1.73577, 2.83939, -101.799, -0.348066, -10.0733 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh138" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.35587, 11.3711, -2.32006, -1.0427, -0.211529, -0.417349, -0.700204, -0.117478, 2.5348, -75.4043, -0.348066, -12.4554 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh126" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.35155, 11.3716, -2.3355, -4.17859, -0.847695, -1.67251, -0.714582, -0.0480133, 2.52058, -131.335, -0.348066, 19.6778 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh127" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.528553, -8.58437, -4.35415, -4.07544, -0.031703, 1.71423, -0.765338, 6.0973, -6.12128, -155.489, -0.348068, 18.129 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh128" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.528553, -8.58437, -4.35415, -4.07544, -0.031703, 1.71423, -0.765338, 6.0973, -6.12128, -168.656, -0.348068, 40.809 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh129" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.167432, 10.3815, -1.24955, -4.07544, -0.031703, 1.71423, 0.914919, 1.75862, 7.40725, -166.187, -0.348064, 83.2702 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh130" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.167432, 10.3815, -1.24955, -4.07544, -0.031703, 1.71423, 0.914919, 1.75862, 7.40725, -143.826, -0.348064, 93.8422 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh131" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.167432, 10.3815, -1.24955, -4.07544, -0.031703, 1.71423, 0.914919, 1.75862, 7.40725, -117.206, 0.279644, 93.8422 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh132" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.167432, -10.3815, 1.24955, -4.07544, -0.031703, 1.71423, -0.914919, -1.75862, -7.40725, -89.6398, 0.279644, 93.8422 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh133" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.914919, -1.75862, -7.40725, -4.07544, -0.031703, 1.71423, -0.167432, 10.3815, -1.24955, -70.2116, 0.279644, 88.4544 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh134" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.914919, -1.75862, -7.40725, -4.07544, -0.031703, 1.71423, -0.167432, 10.3815, -1.24955, -54.7595, -1.63894, 83.843 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh135" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.528553, -8.58437, -4.35415, -4.07544, -0.031703, 1.71423, -0.765337, 6.0973, -6.12128, -40.9106, -1.63894, 83.843 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh136" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.528553, -8.58437, -4.35415, -0.21385, -5.93399, 6.3527, -4.14116, 1.40209, 0.227684, -25.0323, -3.25101, 63.4031 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh171" type="CSGMesh" parent="Rocks"]
+transform = Transform( -4.14116, 1.40209, 0.227684, -0.21385, -5.93399, 6.3527, 0.528553, 8.58437, 4.35415, -9.16512, -3.25101, 79.9086 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 6 )
+
+[node name="CSGMesh115" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.972905, -0.581438, 3.90759, -6.78427, -1.3763, -2.71545, 0.873824, -4.1719, 0.81831, -8.72067, 18.9036, 88.7057 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh42" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 1.25063, 2.04111, 0.308007, -2.99551, 0.42427, -1.31015, 30.5213, 22.0339, 93.4217 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh43" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 1.25063, 2.04111, 0.308007, -2.99551, 0.42427, -1.31015, 48.1671, 8.22154, 93.4217 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh44" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 1.25063, 2.04111, 0.308007, -2.99551, 0.42427, -1.31015, 48.1671, 8.22154, 86.7404 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh45" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 1.25063, 2.04111, 0.308007, -2.99551, 0.42427, -1.31015, 48.1671, 8.22154, 79.7404 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh46" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 1.25063, 2.04111, 0.308007, -2.99551, 0.42427, -1.31015, 48.1671, 8.22154, 72.5752 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh47" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 1.98331, 1.86176, 0.636604, -2.56975, 0.938092, -1.18579, 48.1671, 9.4551, 76.5752 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh48" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.461696, 0.275924, -1.85436, 2.99551, -0.42427, 1.31015, 1.25063, 2.04111, 0.308007, 48.1671, 9.4551, 82.324 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh49" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.329331, 0.376331, -2.13027, 3.01294, -0.338399, 0.785562, 1.25063, 2.04111, 0.308007, 49.6322, 9.4551, 87.9002 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh50" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.36334, 0.50539, -2.0618, 1.8976, 0.0268221, -0.950852, 1.25063, 2.04111, 0.308007, 49.6322, 12.4981, 57.0784 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh51" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.55546, -1.08592, -1.67571, 1.8976, 0.0268221, -0.950852, -0.786804, 1.80065, -1.24012, 55.1769, 12.4981, 57.0784 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh52" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.786804, 1.80065, -1.24012, 1.8976, 0.0268221, -0.950852, 2.55546, 1.08592, 1.67571, 48.028, 12.4982, 63.3386 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh53" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.786804, 1.80065, -1.24012, 1.8976, 0.0268221, -0.950852, 2.55546, 1.08592, 1.67571, 48.028, 8.03102, 66.3193 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh54" type="CSGMesh" parent="Rocks"]
+transform = Transform( -0.59634, -2.10237, 0.236122, 1.8976, 0.0268221, -0.950852, -2.6065, -0.0401093, -2.07127, 48.028, 4.11528, 62.3632 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh24" type="CSGMesh" parent="Rocks"]
+transform = Transform( 1.32142, 2.19538, 1.81023, -1.66995, -1.63753, 1.25154, 4.91824, -0.14218, 2.15583, 87.6483, 15.4816, 37.7254 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 4 )
+
+[node name="CSGMesh16" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.1161, -1.56821, -0.663816, 3.73314, 0.618286, 1.56146, -0.315099, -0.914979, 1.32787, 75.6843, 14.9669, 72.8687 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh139" type="CSGMesh" parent="Rocks"]
+transform = Transform( 4.6792, 0, 0, 0, 1, 0, 0, 0, 1, 68.8574, 14.4183, 73.1365 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh140" type="CSGMesh" parent="Rocks"]
+transform = Transform( 0.011678, 0, 0.999997, 0, 1, 0, -4.67918, 0, 0.00249572, -56.6445, -7.28154, -3.2794 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh141" type="CSGMesh" parent="Rocks"]
+transform = Transform( 4.67643, 0, -0.034411, 0, 1, 0, 0.161016, 0, 0.999408, -61.9425, -0.946788, 1.58823 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh142" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.18853, 0, -0.016104, 0, 1, 0, 0.161016, 0, 0.999408, -69.884, -0.550346, 0.533338 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh143" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.09088, 0, -12.9778, 0, 1.60875, 0, 2.18853, 0, -0.0161041, -86.2058, -0.550346, 0.53334 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh144" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.09088, 0, -12.9778, 0, 1.60875, 0, 2.18853, 0, -0.0161041, -86.9092, -8.48116, 12.5235 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh145" type="CSGMesh" parent="Rocks"]
+transform = Transform( -2.09088, 0, -12.9778, 0, 4.6741, 0, 2.18853, 0, -0.0161041, -58.9801, -11.5563, 12.5235 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh146" type="CSGMesh" parent="Rocks"]
+transform = Transform( 2.09088, 0, 12.9778, 0, 4.6741, 0, -2.18853, 0, 0.016104, -48.4581, -11.5563, 12.5235 )
+use_collision = true
+mesh = ExtResource( 1 )
+material = SubResource( 6 )
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 2.12436, 0, 0, 0, 2.87532, 0, 0, 0, 2.12436, -17.3506, 0, -60.3782 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh2" type="CSGMesh" parent="."]
+transform = Transform( -0.549825, 0, 2.05198, 0, 2.87532, 0, -2.05198, 0, -0.549825, -17.425, 0.0744648, -44.3311 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh3" type="CSGMesh" parent="."]
+transform = Transform( -0.549825, 0, 2.05198, 0, 2.87532, 0, -2.05198, 0, -0.549825, -15.2446, -0.744638, -41.3295 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh4" type="CSGMesh" parent="."]
+transform = Transform( -0.549825, 0, 2.05198, 0, 2.87532, 0, -2.05198, 0, -0.549825, -3.6886, -0.66157, -26.3918 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh9" type="CSGMesh" parent="."]
+transform = Transform( -0.391, 0, 1.45923, 0, 2.87532, 0, -2.05198, 0, -0.549825, -16.587, -0.0105362, -15.473 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh5" type="CSGMesh" parent="."]
+transform = Transform( -0.549825, 0, 2.05198, 0, 2.87532, 0, -2.05198, 0, -0.549825, 7.03637, -0.661572, -24.1114 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh8" type="CSGMesh" parent="."]
+transform = Transform( -1.04154, 0, 3.88707, 0, 5.44673, 0, -3.88707, 0, -1.04154, 23.1884, -0.661572, -28.6736 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh6" type="CSGMesh" parent="."]
+transform = Transform( -2.11664, 0, 0.181013, 0, 2.23543, 0, -0.181013, 0, -2.11664, 9.552, 2.09482, -80.871 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGMesh7" type="CSGMesh" parent="."]
+transform = Transform( -0.722671, 0, -1.99766, 0, 2.23543, 0, 1.99766, 0, -0.722671, -10.448, 2.09482, -74.871 )
+use_collision = true
+mesh = ExtResource( 2 )
+material = SubResource( 7 )
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.44636, 0, 42 )
+visible = false
+use_collision = true
+width = 6.0
+height = 34.0
+depth = 122.0
